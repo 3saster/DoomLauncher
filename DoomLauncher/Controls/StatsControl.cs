@@ -17,9 +17,7 @@ namespace DoomLauncher
         public StatsControl()
         {
             InitializeComponent();
-            SetImage(pbMaps, DoomLauncher.Properties.Resources.map, 0.7f);
             SetImage(pbKills, DoomLauncher.Properties.Resources.kill, 0.7f);
-            SetImage(pbItems, DoomLauncher.Properties.Resources.bon2b, 0.8f);
             SetImage(pbSecrets, DoomLauncher.Properties.Resources.secret, 0.8f);
         }
 
@@ -71,10 +69,8 @@ namespace DoomLauncher
                 }
             }
 
-            ctrlStatsMaps.SetStats(maps, totalMaps, string.Format("{0} / {1}", maps, totalMaps));
             ctrlStatsKills.SetStats(statTotal.KillCount, statTotal.TotalKills, statTotal.FormattedKills);
             ctrlStatsSecrets.SetStats(statTotal.SecretCount, statTotal.TotalSecrets, statTotal.FormattedSecrets);
-            ctrlStatsItems.SetStats(statTotal.ItemCount, statTotal.TotalItems, statTotal.FormattedItems);
         }
     }
 }

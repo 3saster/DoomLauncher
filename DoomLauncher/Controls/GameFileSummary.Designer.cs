@@ -33,20 +33,16 @@
             this.tableLayoutPanelDB2 = new DoomLauncher.TableLayoutPanelDB();
             this.lblTagsText = new DoomLauncher.GrowLabel();
             this.lblTags = new System.Windows.Forms.Label();
-            this.tableLayoutPanelDB1 = new DoomLauncher.TableLayoutPanelDB();
-            this.lblLastMap = new System.Windows.Forms.Label();
-            this.lblLastMapText = new System.Windows.Forms.Label();
             this.lblTitle = new DoomLauncher.GrowLabel();
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.ctrlStats = new DoomLauncher.StatsControl();
             this.txtDescription = new DoomLauncher.Controls.CRichTextBox();
             this.txtComments = new DoomLauncher.Controls.CRichTextBox();
-            this.lblTimePlayed = new System.Windows.Forms.Label();
             this.tbl2 = new DoomLauncher.TableLayoutPanelDB();
+            this.lblTimePlayed = new System.Windows.Forms.Label();
             this.lblTimePlayedText = new System.Windows.Forms.Label();
             this.tblMain.SuspendLayout();
             this.tableLayoutPanelDB2.SuspendLayout();
-            this.tableLayoutPanelDB1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.tbl2.SuspendLayout();
             this.SuspendLayout();
@@ -56,25 +52,23 @@
             this.tblMain.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tblMain.ColumnCount = 1;
             this.tblMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblMain.Controls.Add(this.tableLayoutPanelDB2, 0, 4);
-            this.tblMain.Controls.Add(this.tableLayoutPanelDB1, 0, 3);
+            this.tblMain.Controls.Add(this.tableLayoutPanelDB2, 0, 3);
             this.tblMain.Controls.Add(this.lblTitle, 0, 0);
             this.tblMain.Controls.Add(this.pbImage, 0, 1);
-            this.tblMain.Controls.Add(this.ctrlStats, 0, 5);
-            this.tblMain.Controls.Add(this.txtDescription, 0, 6);
-            this.tblMain.Controls.Add(this.txtComments, 0, 7);
+            this.tblMain.Controls.Add(this.ctrlStats, 0, 4);
+            this.tblMain.Controls.Add(this.txtDescription, 0, 5);
+            this.tblMain.Controls.Add(this.txtComments, 0, 6);
             this.tblMain.Controls.Add(this.tbl2, 0, 2);
             this.tblMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblMain.Location = new System.Drawing.Point(0, 0);
             this.tblMain.Margin = new System.Windows.Forms.Padding(0);
             this.tblMain.Name = "tblMain";
-            this.tblMain.RowCount = 8;
+            this.tblMain.RowCount = 7;
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
+            this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tblMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -118,43 +112,6 @@
             this.lblTags.TabIndex = 13;
             this.lblTags.Text = "tags";
             // 
-            // tableLayoutPanelDB1
-            // 
-            this.tableLayoutPanelDB1.ColumnCount = 3;
-            this.tableLayoutPanelDB1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanelDB1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanelDB1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelDB1.Controls.Add(this.lblLastMap, 2, 0);
-            this.tableLayoutPanelDB1.Controls.Add(this.lblLastMapText, 1, 0);
-            this.tableLayoutPanelDB1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelDB1.Location = new System.Drawing.Point(1, 264);
-            this.tableLayoutPanelDB1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelDB1.Name = "tableLayoutPanelDB1";
-            this.tableLayoutPanelDB1.RowCount = 1;
-            this.tableLayoutPanelDB1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelDB1.Size = new System.Drawing.Size(202, 20);
-            this.tableLayoutPanelDB1.TabIndex = 14;
-            // 
-            // lblLastMap
-            // 
-            this.lblLastMap.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblLastMap.AutoSize = true;
-            this.lblLastMap.Location = new System.Drawing.Point(101, 3);
-            this.lblLastMap.Name = "lblLastMap";
-            this.lblLastMap.Size = new System.Drawing.Size(46, 13);
-            this.lblLastMap.TabIndex = 12;
-            this.lblLastMap.Text = "last map";
-            // 
-            // lblLastMapText
-            // 
-            this.lblLastMapText.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblLastMapText.AutoSize = true;
-            this.lblLastMapText.Location = new System.Drawing.Point(11, 3);
-            this.lblLastMapText.Name = "lblLastMapText";
-            this.lblLastMapText.Size = new System.Drawing.Size(54, 13);
-            this.lblLastMapText.TabIndex = 11;
-            this.lblLastMapText.Text = "Last Map:";
-            // 
             // lblTitle
             // 
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -183,16 +140,16 @@
             this.ctrlStats.Location = new System.Drawing.Point(1, 306);
             this.ctrlStats.Margin = new System.Windows.Forms.Padding(0);
             this.ctrlStats.Name = "ctrlStats";
-            this.ctrlStats.Size = new System.Drawing.Size(202, 78);
+            this.ctrlStats.Size = new System.Drawing.Size(202, 52);
             this.ctrlStats.TabIndex = 8;
             // 
             // txtDescription
             // 
             this.txtDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDescription.Location = new System.Drawing.Point(4, 388);
+            this.txtDescription.Location = new System.Drawing.Point(4, 362);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtDescription.Size = new System.Drawing.Size(196, 207);
+            this.txtDescription.Size = new System.Drawing.Size(196, 228);
             this.txtDescription.TabIndex = 9;
             this.txtDescription.Text = "";
             this.txtDescription.WarnLinkClick = true;
@@ -200,23 +157,13 @@
             // txtComments
             // 
             this.txtComments.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtComments.Location = new System.Drawing.Point(4, 602);
+            this.txtComments.Location = new System.Drawing.Point(4, 597);
             this.txtComments.Name = "txtComments";
             this.txtComments.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtComments.Size = new System.Drawing.Size(196, 48);
+            this.txtComments.Size = new System.Drawing.Size(196, 53);
             this.txtComments.TabIndex = 10;
             this.txtComments.Text = "";
             this.txtComments.WarnLinkClick = true;
-            // 
-            // lblTimePlayed
-            // 
-            this.lblTimePlayed.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblTimePlayed.AutoSize = true;
-            this.lblTimePlayed.Location = new System.Drawing.Point(101, 3);
-            this.lblTimePlayed.Name = "lblTimePlayed";
-            this.lblTimePlayed.Size = new System.Drawing.Size(60, 13);
-            this.lblTimePlayed.TabIndex = 8;
-            this.lblTimePlayed.Text = "time played";
             // 
             // tbl2
             // 
@@ -234,6 +181,16 @@
             this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tbl2.Size = new System.Drawing.Size(202, 20);
             this.tbl2.TabIndex = 13;
+            // 
+            // lblTimePlayed
+            // 
+            this.lblTimePlayed.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTimePlayed.AutoSize = true;
+            this.lblTimePlayed.Location = new System.Drawing.Point(101, 3);
+            this.lblTimePlayed.Name = "lblTimePlayed";
+            this.lblTimePlayed.Size = new System.Drawing.Size(60, 13);
+            this.lblTimePlayed.TabIndex = 8;
+            this.lblTimePlayed.Text = "time played";
             // 
             // lblTimePlayedText
             // 
@@ -257,8 +214,6 @@
             this.tblMain.PerformLayout();
             this.tableLayoutPanelDB2.ResumeLayout(false);
             this.tableLayoutPanelDB2.PerformLayout();
-            this.tableLayoutPanelDB1.ResumeLayout(false);
-            this.tableLayoutPanelDB1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.tbl2.ResumeLayout(false);
             this.tbl2.PerformLayout();
@@ -275,13 +230,10 @@
         private StatsControl ctrlStats;
         private Controls.CRichTextBox txtDescription;
         private Controls.CRichTextBox txtComments;
-        private System.Windows.Forms.Label lblLastMapText;
-        private System.Windows.Forms.Label lblLastMap;
         private System.Windows.Forms.Label lblTimePlayed;
         private System.Windows.Forms.Label lblTimePlayedText;
         private System.Windows.Forms.Label lblTags;
         private TableLayoutPanelDB tbl2;
         private TableLayoutPanelDB tableLayoutPanelDB2;
-        private TableLayoutPanelDB tableLayoutPanelDB1;
     }
 }

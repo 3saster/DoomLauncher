@@ -138,17 +138,14 @@ namespace DoomLauncher
             if (stats.Any())
             {
                 ctrlStats.Visible = true;
-                GetRowStyle(ctrlStats).Height = 120;
+                GetRowStyle(ctrlStats).Height = 62;
 
                 ctrlStats.SetStatistics(gameFile, stats);
-
-                lblLastMap.Text = stats.OrderByDescending(x => x.RecordTime).First().MapName;
             }
             else
             {
                 ctrlStats.Visible = false;
                 GetRowStyle(ctrlStats).Height = 0;
-                lblLastMap.Text = "N/A";
             }
         }
 
